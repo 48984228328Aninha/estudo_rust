@@ -28,4 +28,11 @@ fn main() {
     println!("Resultado: {}", resultado);
     println!("Overflow: {}", overflow);
 
+    //saturating para no máx.
+    let l:u8 = 255;
+    let resultado = x.saturating_add(100);
+
+    println!("resultado: {}", resultado);
+
+
 }
