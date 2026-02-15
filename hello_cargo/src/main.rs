@@ -1,5 +1,5 @@
 fn main() {
-    //usando wrapping p evitar int overflow
+    //usando wrapping p evitar int overflow, ele começa dnv no 0
     let x:u8 = 255;
 
     let result = x.wrapping_add(1);
@@ -10,7 +10,7 @@ fn main() {
 
         println!("{x}");
 
-    //agr vou usar checked, o + seguro
+    //agr vou usar checked, o + seguro, mostra o erro
 
     let y:u8 = 255;
     let checar = y.checked_add(1);
@@ -20,5 +20,12 @@ fn main() {
         None => println!("Erro"),
     }
 
+    //overflowing devolve valor + aviso
+
+    let z:u8 = 255;
+    let (resultado, overflow) = x.overflowing_add(1);
+
+    println!("Resultado: {}", resultado);
+    println!("Overflow: {}", overflow);
 
 }
