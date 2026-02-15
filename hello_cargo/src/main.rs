@@ -1,12 +1,11 @@
 fn main() {
-    let x = 5;
+    let x:u8 = 255;
 
-    let x = x+5;
+    let result = x.wrapping_add(1);
+    println!("{}", result);
 
-    {
-        let x = x * 2;
-        println!["{x}"];
-    }
+        let resultado = x.wrapping_mul(2);
+        println!["{}", resultado];
 
-    println!["{x}"];
+        println!("{x}");
 }
