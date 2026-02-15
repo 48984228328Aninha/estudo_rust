@@ -1,3 +1,5 @@
+use std::u8;
+
 fn main() {
     //usando wrapping p evitar int overflow, ele começa dnv no 0
     let x:u8 = 255;
@@ -33,6 +35,11 @@ fn main() {
     let resultado = x.saturating_add(100);
 
     println!("resultado: {}", resultado);
+
+    //para criar uma tupla de cria
+    let tup: (u8, i8, u8) = (10, -3, 9);
+    let (x,y,z) = tup;
+    println!("O valor de y da tupla de cria é: {y}");
 
 
 }
