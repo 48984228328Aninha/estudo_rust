@@ -1,4 +1,4 @@
-use std::u8;
+use std::{io, u8};
 
 fn main() {
     //usando wrapping p evitar int overflow, ele começa dnv no 0
@@ -54,5 +54,26 @@ fn main() {
     let second:u8 = arr[1];
 
     println!("{first}, {second}");
+
+    //para criar uma String em Java é assim: String nome, mas em Rust tem isso aqui :(
+    let a = [1,2,3,4,5];
+    println!("escolhe um indíce aí kk");
+    let mut index = String::new();
+
+    //lê a entrada do teclado
+    io::stdin()
+    .read_line(&mut index)
+    .expect("tenta de novo, parceiro");
+
+    //shadowing
+    let index:usize = index
+    .trim()
+    .parse()
+    .expect("não rolou");
+
+    //coloca o input dentro do array
+    let element = a[index];
+    println!("o valor do elemento de indíce {index} é {element}");
+
 
 }
