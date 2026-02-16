@@ -29,4 +29,10 @@ fn outra_funcao(x: u8) {
     }
 
     println!("o valor da soma eh: {}", somar(5, 3));
+
+    fn plus_one(x:i32) -> i32 {
+        x + 1
+    }
+
+    println!("só queria usar o plus_one msm: {}", plus_one(4));
 }
