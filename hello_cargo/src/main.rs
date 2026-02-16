@@ -75,5 +75,13 @@ fn main() {
     let element = a[index];
     println!("o valor do elemento de indíce {index} é {element}");
 
+    //funcao
+    funcao_amandinha();
+    
+
+    fn funcao_amandinha() {
+        println!("outra funcao");
+    }
+
 
 }
