@@ -41,5 +41,18 @@ fn main() {
     let (x,y,z) = tup;
     println!("O valor de y da tupla de cria é: {y}");
 
+    //dá para fazer assim tbm
+    let first_element = tup.0;
+    let second_element = tup.1;
+    let third_element = tup.2;
+
+    println!("{first_element}, {second_element}, {third_element}");
+
+    //acesso a elementos de um array de cria
+    let arr: [u8; 5] = [1,2,3,4,5];
+    let first:u8 = arr[0];
+    let second:u8 = arr[1];
+
+    println!("{first}, {second}");
 
 }
