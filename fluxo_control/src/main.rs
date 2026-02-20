@@ -21,7 +21,18 @@ fn main() {
     println!("The value of number is: {number}, {check}");
 
     //loop executa várias vezes até eu mandar parar
-    loop {
+    /*loop {
         println!("loop");
-    }
+    }*/
+
+    let mut counter= 0;
+    let result = loop {
+        counter+=1;
+
+        if counter == 0 {
+            break counter * 2;
+        }
+    };
+
+    println!("o valor é: {counter} e {result}");
 }
