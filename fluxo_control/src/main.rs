@@ -6,6 +6,7 @@ fn main() {
     match checar {
         Some(number) => println!("Resultado: {}", number),
         None => println!("Erro"),
+ 
     }
 
     if number == 254 {
@@ -13,6 +14,8 @@ fn main() {
     } else {
         println!("não é igual");
     }
+
+    verifica_numero();
 
     //usando if em uma instrução let
     let condition = true;
@@ -25,14 +28,29 @@ fn main() {
         println!("loop");
     }*/
 
-    let mut counter= 0;
-    let result = loop {
-        counter+=1;
 
-        if counter == 0 {
-            break counter * 2;
-        }
-    };
+    fn verifica_numero() {
+        let mut counter:u8 = 0;
 
-    println!("o valor é: {counter} e {result}");
+        let result = loop {
+            counter+=1;
+
+            if counter == 10 {
+                break counter * 2;
+            }
+
+            let check = counter.checked_add(1);
+
+            match check {
+            Some(valor) => println!("Resultado: {}", valor),
+            None => println!("Erro"),
+            }
+            
+        };
+
+        println!("{result}");
+        
+    }
+    
+    
 }
