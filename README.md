@@ -25,3 +25,10 @@ println"({s});
 
 # Como uma string é armazenada?
 <img src="https://doc.rust-lang.org/stable/book/img/trpl04-01.svg">
+
+# Rust não copia dados fielmente, usa apenas referência ou movimento para economizar memória. Para copiar fielmente, use clone.
+
+let s1 = String::from("hello");
+let s2 = s1.clone();
+
+println!("s1 = {s1}, s2 = {s2}");
