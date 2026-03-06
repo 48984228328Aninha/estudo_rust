@@ -51,6 +51,23 @@ fn main() {
         println!("{result}");
         
     }
+
+    fn loop_aninhado() {
+        let count = 0;
+        'counting_loop: loop {
+            println!("count = {count}");
+            let mut remaining = 10;
+
+            loop {
+                println!("remaining = {remaining}");
+                if remaining == 9 {
+                break;
+                }
+            }
+        }
+    }
+    println!("loop:");
+loop_aninhado();
     
     
 }

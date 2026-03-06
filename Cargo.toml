@@ -1,4 +1,4 @@
-workspace = { members = [ "fluxo_control", "function","src/hello_cargo"] }
+workspace = { members = [ "fluxo_control", "function", "propriedade","src/hello_cargo"] }
 [package]
 name = "app"
 version = "0.1.0"
