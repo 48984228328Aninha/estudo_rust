@@ -1,6 +1,5 @@
-workspace = { members = [ "fluxo_control", "function", "propriedade", "referencia","src/hello_cargo"] }
 [package]
-name = "app"
+name = "referencia"
 version = "0.1.0"
 edition = "2021"
 
