@@ -1,12 +1,24 @@
-# estudo_rust
-Um repositório feito para estudar Rust
+<div align=center>
+<h1>Estudos Rust <3</h1>
+<p>Um repositório feito para estudar Rust, documentando informações que acho importante de serem mencionadas e que fazem a linguagem ser diferente de um jeito bom.</p>
+</div>
 
-# Stack e Heap: diferença em Rust
+  <div>
+  <h3>Serve para</h3>
+  <ul>
+    <li>Consultar todos os conceitos da linguagem dentro das pastas</li>
+    <li>Guia de estudo com todos os códigos da documentação oficial (O livro)</li>
+  </ul>
+  </div>
 
-## Stack
+<div align=center>
+<h1>Stack e Heap: diferença em Rust</h1>
+</div>
+
+# Stack
 - Usada para guardar valores e acessar o último valor, parecido com uma pilha de pratos, adiciona-se pratos e pega-se o último. Adicionar algo no meio ou nos primeiros pode se tornar difícil. Todos eles devem ter tamanho conhecido
 
-## Heap
+# Heap
 - Alocador de memória encontra um espaço vazio e retorna um ponteiro
 
 # Comparação
